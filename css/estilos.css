@@ -1,17 +1,31 @@
-body{
-    background-color: rgb(136, 132, 132);
+*{
+    margin: 0;
+    padding: 0;
 }
-header{
-    width: 100%;
-    height: 80vh;
-    background-image: url(../img-cafeteria/header_inicio.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
+
+html {
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: rgb(235, 231, 222);
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
+
+/* Header */
+header{
+    width: 100%;
+    height: 78vh;
+    background-image: url(../img-cafeteria/header_inicio.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+}
+
 header::before{
     background-color: #000;
     content: "";
@@ -21,45 +35,581 @@ header::before{
     right: 0;
     left: 0;
     opacity: 0.6;
+    max-height: 78vh;
 }
+
 .barra{
-    width: 80%;
-    height: 20vh;
+    margin-top: 2rem;
     display: flex;
-    position: relative;
-    display: flex;
-}
-.menu{
-    width: 95%;
-    height: 30vh;
-    display: flex;
-    justify-content: flex-end;
-    gap: 15px;
-    position: relative;
+    justify-content: space-around;
     align-items: center;
-    
+    padding: 3rem 2rem 0
 }
+
+.logo1{
+    width: 10rem;
+    height: 10rem;
+    z-index: 100;
+}
+
+.menu{
+    z-index: 100;
+    display: flex;
+    justify-content: end;
+}
+
 a{
     text-decoration: none;
-    font-size: 20px;
+    margin: 0 5px;
     font-family:Arial, Helvetica, sans-serif;
     color: aliceblue;
+    font-weight: 600;
 }
-.inicio{
+
+a:hover{
     color: rgb(230, 183, 65);
 }
+
 .titulo1{
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 40px;
+    font-size: 30px;
     color: rgb(255, 255, 255);
+    text-align: center;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+    z-index: 100;
+}
+
+
+/* section 1 */
+.cuadro-blanco{
+    width: 70%;
+    background-color: aliceblue;
+    position: relative;
+    margin-top: -8rem;
+}
+
+.conoce-mas{
+    font-family:sans-serif;
+    color: rgb(181, 143, 49);
+    font-size: 20px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+.sobre-nosotros{
+    font-family:sans-serif;
+    color: rgb(94, 49, 30);
+    font-size: 30px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+.logo2{
     display: flex;
     justify-content: center;
-    position: relative;
+    align-items: center;
+    margin-bottom: 3rem;
 }
-.logo1{
+.semilla{
+    height: 5rem;
+    width: 5rem;
     display: flex;
-    justify-content: flex-end;
-    gap: 15px;
-    position: relative;
+    justify-content: center;
     align-items: center;
 }
+.elementos{
+    margin-top: 3rem;
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+}
+
+.elementos img{
+    width: 5rem;
+    height: 5rem;
+}
+
+.subtitulos{
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+    color: rgb(95, 73, 18);
+    font-family: serif;
+}
+
+.barra3 {
+    margin-top: 3rem;
+}
+
+.barra2{
+    width: 100%;
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.parrafo1{
+    width: 100%;
+    height: 15vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.p1{
+    width: 80%;
+    text-align: justify;
+}
+.Vive-la{
+    font-family:sans-serif;
+    color: rgb(181, 143, 49);
+    font-size: 20px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+.Experiencia{
+    font-family:sans-serif;
+    color: rgb(94, 49, 30);
+    font-size: 30px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+.logo3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 3rem;
+}
+
+.logo3 img{
+    width: 5rem;
+    height: 5rem;
+}
+
+.collage{
+    width: 70%;
+    height: 100vh;
+}
+.collage1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 3rem;
+}
+
+/* section 2 */
+.section2{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: rgb(94, 49, 30);
+    padding-bottom: 5rem;
+}
+
+.contenedor{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.div-general{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    gap: 2rem;
+}
+.titulos2{
+    width: 100%;
+    margin-top: -4rem;
+    position: relative;
+    text-align: justify;
+}
+.nuestro-delicioso{
+    display: flex;
+    font-family:sans-serif;
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+    justify-content: center;
+    align-items: center;
+}
+.menu-2{
+    display: flex; 
+    font-family:sans-serif;
+    color: rgb(255, 255, 255);
+    font-size: 33px;
+    justify-content: center;
+    align-items: center;
+}
+.menu-arriba{
+    width: 100%;
+    margin-top: 3%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.menu-arriba1{
+    width: 60%;
+}
+.titulo-cafe{
+    width: 50%;
+    height: 35vh;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    color: aliceblue;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+.div-comida{
+    width: 50%;
+    height: 35vh;
+}
+.cafe{
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    margin: 2rem 0;
+}
+.texto1{
+    height: 0vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: aliceblue;
+}
+.t1{
+    color: aliceblue;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100%;
+}
+.t2{
+    color: rgb(208, 169, 127);
+    width: 100%;
+}
+.texto-content{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+.texto2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: aliceblue;
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.titulo-comida{
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    color: aliceblue;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+.comida{
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    margin: 2rem 0;
+}
+.menu-abajo{
+    width: 60%;
+    justify-content: center;
+    align-items: center;
+    margin-top: 12rem;
+}
+.menu-abajo1{
+   display: flex;
+   justify-content: end; 
+   align-items: end;
+}
+
+/* section 3 */
+.cuadro-blanco2{
+    background-color: aliceblue;
+    margin-top: -5rem;
+    margin-bottom: -10rem;
+    width: 70%;
+    z-index: 100;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-footer{
+    width: 100%;
+    height: 28vh;
+    background-color: rgb(94, 49, 30);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 5rem;
+}
+
+.Lo-que-dicen-nuestros{
+    font-family:sans-serif;
+    color: rgb(181, 143, 49);
+    font-size: 20px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+.Clientes{
+    font-family:sans-serif;
+    color: rgb(94, 49, 30);
+    font-size: 30px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+.logo4{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.p4{
+    margin: 10%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: rgb(235, 231, 222);
+    width: 40%;
+    height: 10rem;
+    gap: 1rem;
+    padding: 2% 2% 5% 2%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.parrafo4{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.autor{
+    
+    text-align: right;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(94, 49, 30);
+    font-size: 20px;
+}
+.titulos3{
+    margin-top: 3rem;
+}
+
+.subtitulos2{
+    align-items: center;
+    color: rgb(181, 143, 49);
+    font-family: serif;
+}
+.contenedor-info{
+    display: flex;
+    justify-content: center;
+    gap: 10rem;
+    margin: 3rem 0;
+}
+.info{
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    text-align: right;
+    color: rgb(0, 0, 0);
+    font-family: serif; 
+}
+.información{
+    justify-content: center;
+    color: #000;
+}
+.espacio-info{
+    display: flex;
+}
+.footer-txt{
+    display: flex;
+    color: aliceblue;
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: normal;
+}
+/* ==================== */
+/* MEDIA QUERIES */
+/* ==================== */
+
+/* Tablets (768px - 1023px) */
+@media (max-width: 1100px) {
+    .barra {
+      flex-direction: column;
+      gap: 1rem;
+    }
+  
+    .menu {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .titulo1 {
+      font-size: 24px;
+      margin: 2rem 1rem;
+    }
+  
+    .cuadro-blanco {
+      width: 90%;
+    }
+  
+    .elementos, .subtitulos {
+      flex-direction: column;
+      gap: 1rem;
+    }
+  
+    .collage {
+      width: 90%;
+      height: auto;
+    }
+  
+    .div-general {
+      flex-direction: column;
+    }
+  
+    .titulo-cafe, .div-comida {
+      width: 100%;
+      height: auto;
+    }
+  
+    .menu-arriba1,
+    .menu-abajo {
+      width: 80%;
+    }
+  
+    .cuadro-blanco2 {
+      width: 90%;
+    }
+    .contenedor-info {
+        max-width: 80%;
+    }
+  }
+  
+  /* Smartphones (≤ 767px) */
+  @media (max-width: 768px) {
+    .logo1 {
+      width: 6rem;
+      height: 6rem;
+    }
+  
+    a {
+      font-size: 14px;
+    }
+  
+    .titulo1 {
+      font-size: 18px;
+    }
+  
+    .barra {
+      padding: 1rem;
+    }
+  
+    .cuadro-blanco {
+      margin-top: -4rem;
+    }
+  
+    .parrafo1 {
+      height: auto;
+      padding: 1rem 0;
+    }
+  
+    .p1 {
+      width: 90%;
+      font-size: 14px;
+    }
+  
+    .semilla,
+    .logo3 img,
+    .elementos img {
+      width: 3rem;
+      height: 3rem;
+    }
+  
+    .collage {
+      width: 100%;
+      height: auto;
+    }
+  
+    .div-general {
+      flex-direction: column;
+      gap: 1rem;
+    }
+  
+    .titulo-cafe, .div-comida {
+      width: 100%;
+    }
+  
+    .texto-content {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      gap: 1rem;
+      margin-bottom: 1em;
+    }
+  
+    .texto2 {
+      font-size: 20px;
+      margin-top: 0.5rem;
+    }
+  
+    .menu-arriba1 {
+      width: 100%;
+    }
+  
+    .menu-abajo {
+      margin-top: 8rem;
+      width: 100%;
+    }
+  
+    .cuadro-blanco2 {
+      width: 95%;
+    }
+  
+    .contenedor-info {
+      flex-direction: column;
+      gap: 2rem;
+      align-items: center;
+    }
+  
+    .section-footer {
+      text-align: center;
+      margin-top: 4rem;
+      padding: 1rem;
+    }
+  }
+
+  @media (max-width: 426px) {
+    .p4 {
+      width: 80%;
+      height: 20vh;
+      padding: 1rem;
+    }
+  }
+  @media (max-width: 468px) {
+    .section-footer {
+        text-align: center;
+        margin-top: 9rem;
+        padding: 1rem;
+      }
+      .p4 {
+        width: 60%;
+        height: 40vh;
+        padding: 1rem;
+      }
+      .contenedor{
+        width: 100%;
+        margin-bottom: 20rem;
+      }
+  }

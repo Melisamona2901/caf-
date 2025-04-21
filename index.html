@@ -1,27 +1,258 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cafetería SASS</title>
-   <link rel="stylesheet" href="./css/estilos.css">
+    <link rel="stylesheet" href="./css/estilos.css">
 </head>
+
 <body>
-    <header>
+    <header id="header">
         <div class="barra">
-            <img class="logo1" src="./img-cafeteria/logo.svg" alt="">
+            <img class="logo1" src="./img-cafeteria/logo.png" alt="">
             <nav class="menu">
-                <a class="inicio" href="">INICIO</a>
-                <a href="">NOSOTROS</a>
-                <a href="">PROCESO</a>
+                <a class="inicio" href="#header">INICIO</a>
+                <a href="#cuadro-blanco">NOSOTROS</a>
+                <a href="#section2">PROCESO</a>
                 <a href="">MENÚ</a>
                 <a href="">GALERÍA</a>
                 <a href="">CONTACTO</a>
             </nav>
         </div>
-        <div>
-            <h1 class="titulo1">DISFRUTA UNA DELICIOSA TAZA DE CAFÉ</h1>
-        </div>
+        <h1 class="titulo1">DISFRUTA UNA DELICIOSA TAZA DE CAFÉ</h1>
     </header>
+
+    <!-- Main -->
+    <section class="cuadro-blanco" id="cuadro-blanco">
+        <div class="barra2">
+            <h1 class="conoce-mas">CONOCE MÁS</h1>
+            <h2 class="sobre-nosotros">SOBRE NOSOTROS</h2>
+        </div>
+        <div class="logo2">
+            <img class="semilla" src="./img-cafeteria/cafe.svg" alt="">
+        </div>
+        <div class="parrafo1">
+            <p class="p1">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cum, dolor nulla ipsum, autem
+                expedita eligendi laudantium, vero voluptatem sit eum ducimus odio cumque unde praesentium nemo deserunt
+                quos totam nobis nesciunt. Cupiditate quibusdam ipsum dolorum beatae, ratione libero distinctio
+                repudiandae eos commodi! Placeat optio architecto animi quam facere accusantium atque velit reiciendis.
+                Voluptates reiciendis natus similique quidem eligendi! Incidunt id aliquam laborum quo, porro enim
+                magnam, possimus fugiat fuga mollitia ut doloremque blanditiis repellat cumque alias odio sed! Quaerat
+                dolor inventore unde consequatur! Atque esse accusantium ab odio! Exercitationem laborum id deserunt
+                culpa nisi, ipsam nostrum asperiores, facilis incidunt animi suscipit cum quaerat iure perspiciatis modi
+                ratione, fugit quas reiciendis.</p>
+        </div>
+        <div class="elementos">
+            <div>
+                <img src="./img-cafeteria/icono_cafe.svg" alt="">
+                <h1 class="subtitulos">Café</h1>
+            </div>
+            <div>
+                <img src="./img-cafeteria/icono_postre.svg" alt="">
+                <h1 class="subtitulos">Postres</h1>
+            </div>
+            <div>
+                <img src="./img-cafeteria/icono_te.svg" alt="">
+                <h1 class="subtitulos">Té</h1>
+            </div>
+        </div>
+        <div class="barra3">
+            <h1 class="Vive-la">VIVE LA</h1>
+            <h2 class="Experiencia">EXPERIENCIA</h2>
+        </div>
+        <div class="logo3">
+            <img class="semilla" src="./img-cafeteria/cafe.svg" alt="">
+        </div>
+        <div class="collage1">
+            <img class="collage" src="./img-cafeteria/Galería.jpg" alt="">
+        </div>
+    </section>
+
+    <section class="section2" id="section2">
+        <div class="contenedor">
+            <div class="menu-arriba">
+                <img class="menu-arriba1" src="./img-cafeteria/menu_arriba.svg" alt="">
+            </div>
+            <div class="titulos2">
+                <h1 class="nuestro-delicioso">NUESTRO DELICIOSO</h1>
+                <h1 class="menu-2">MENÚ</h1>
+            </div>
+            <div class="div-general">
+                <div class="titulo-cafe">
+                    <div class="cafe">
+                        <h1>CAFÉ</h1>
+                    </div>
+                    <div class="texto-content">
+                        <div class="texto1">
+                            <p class="t1">Café Latte</p>
+                            <p class="t2">Café Espresso con leche caliente evaporada</p>
+                        </div>
+                        <div class="texto2">
+                            <p>$25</p>
+                        </div>
+                    </div>
+                    <div class="texto-content">
+                        <div class="texto1">
+                            <p class="t1">Café Mocha</p>
+                            <p class="t2">Espresso con crema batida</p>
+                        </div>
+                        <div class="texto2">
+                            <p>$30</p>
+                        </div>
+                    </div>
+                    <div class="texto-content">
+                        <div class="texto1">
+                            <p class="t1">Café Americano</p>
+                            <p class="t2">Café Negro</p>
+                        </div>
+                        <div class="texto2">
+                            <p>$30</p>
+                        </div>
+                    </div>
+                    <div class="texto-content">
+                        <div class="texto1">
+                            <p class="t1">Capuccino</p>
+                            <p class="t2">Espresso con una capa suave de espuma</p>
+                        </div>
+                        <div class="texto2">
+                            <p>$25</p>
+                        </div>
+                    </div>
+                    <div class="texto-content">
+                        <div class="texto1">
+                            <p class="t1">Café Mocha Frío</p>
+                            <p class="t2">Espresso, dulce con mocha y leche</p>
+                        </div>
+                        <div class="texto2">
+                            <p>$29</p>
+                        </div>
+                    </div>
+                    <div class="texto-content">
+                        <div class="texto1">
+                            <p class="t1">Mocha Frío Quemado</p>
+                            <p class="t2">Espresso, hielo, con azucar quemada y mantequilla</p>
+                        </div>
+                        <div class="texto2">
+                            <p>$35</p>
+                        </div>
+                    </div>
+                    <div class="texto-content">
+                        <div class="texto1">
+                            <p class="t1">Latte con Caramelo</p>
+                            <p class="t2">Espresso, leche y caramelo</p>
+                        </div>
+                        <div class="texto2">
+                            <p>$39</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="div-comida">
+                    <div class="titulo-comida">
+                        <div class="comida">
+                            <h1>COMIDA</h1>
+                        </div>
+                    <div class="texto-content">
+                        <div class="texto1">
+                            <p class="t1">Baguette de Pollo</p>
+                            <p class="t2">Delicioso Baguette con Pollo a la plancha</p>
+                        </div>
+                        <div class="texto2">
+                            <p>$45</p>
+                        </div>
+                    </div>
+                    <div class="texto-content">
+                        <div class="texto1">
+                            <p class="t1">Baguette Pollo y Queso</p>
+                            <p class="t2">Baguette combinado con Pollo y Queso Mancheco</p>
+                        </div>
+                        <div class="texto2">
+                            <p>$50</p>
+                        </div>
+                    </div>
+                    <div class="texto-content">
+                        <div class="texto1">
+                            <p class="t1">Baguette con Tocino</p>
+                            <p class="t2">Baguette con especias y verduras, además de Tocino</p>
+                        </div>
+                        <div class="texto2">
+                            <p>$50</p>
+                        </div>
+                    </div>
+                    <div class="texto-content">
+                        <div class="texto1">
+                            <p class="t1">Baguette de Jamón</p>
+                            <p class="t2">Delicioso Baguette de Jamón y especias</p>
+                        </div>
+                        <div class="texto2">
+                            <p>$65</p>
+                        </div>
+                    </div>
+                    <div class="texto-content">
+                        <div class="texto1">
+                            <p class="t1">Baguette con Jamón, Queso y Tocino</p>
+                            <p class="t2">El especial de la casa</p>
+                        </div>
+                        <div class="texto2">
+                            <p>$69</p>
+                        </div>
+                    </div>
+                    <div class="texto-content">
+                        <div class="texto1">
+                            <p class="t1">Sandwich de Pollo</p>
+                            <p class="t2">Delicioso Sandwich con Pollo y especies</p>
+                        </div>
+                        <div class="texto2">
+                            <p>$65</p>
+                        </div>
+                    </div>
+                    <div class="texto-content">
+                        <div class="texto1">
+                            <p class="t1">Sandwich de Jamón y Queso</p>
+                            <p class="t2">Queso amarillo con Jamón y Queso</p>
+                        </div>
+                        <div class="texto2">
+                            <p>$59</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+            <div class="menu-abajo">
+                <img class="menu-abajo1" src="./img-cafeteria/menu_abajo.svg" alt="">
+            </div>
+        </section>
+
+    <section class="cuadro-blanco2">
+        <div class="titulos3">
+            <h1 class="Lo-que-dicen-nuestros">LO QUE DICEN NUESTROS</h1>
+            <h2 class="Clientes">CLIENTES</h2>
+        </div>
+        <div class="logo4">
+            <img class="semilla" src="./img-cafeteria/cafe.svg" alt="">
+        </div>
+        <div class="p4">
+            <p class="parrafo4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur aliquam eum eligendi animi aut odit aperiam magnam quisquam natus, beatae a voluptatibus odio eveniet impedit labore optio unde quis? Magni!.</p>
+            <p class="autor">- Juan De la torre</p>
+        </div>
+        <div class="contenedor-info">
+            <div class="subtitulos2">
+                <h1>UBICACIÓN</h1>
+                <p class="información">Nicolas Copérnico 5990 <span class="espacio-info">Guadalajara, Jalisco</span></p>
+            </div>
+            <div class="subtitulos2">
+                <h1>RESERVACIÓN</h1>
+                <p class="información">Tel. 3850-9102<span class="espacio-info">Llamar</span></p>
+            </div>
+            <div class="subtitulos2">
+                <h1>HORARIO</h1>
+                <p class="información">Lun-Jue: 11:00 - 22:00 <span class="espacio-info">Vie-Sab: 09:00 - 24:00</span> <span>Domingo: Cerrado</span></p>
+            </div>
+        </div>
+    </section>
+    <footer class="section-footer">
+        <h3 class="footer-txt">Todos los derechos reservados. La Cafetería</h3>
+    </footer>
 </body>
 </html>
